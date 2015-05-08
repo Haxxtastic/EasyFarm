@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-US">
   <head>
+    <!--Angular JS Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="js/main.js"></script>
+
     <meta charset="UTF-8">
-    <title>Easyfarm</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <title>Easyfarm</title>
   </head>
-  <body>
+  <body ng-app="myApp" ng-controller="ProjectController">
     <section class="page-header">
-      <h1 class="project-name">EasyFarm</h1>
-      <h2 class="project-tagline">General Purpose Farming Tool For Final Fantasy XI</h2>
+      <h1 class="project-name">{{name}}</h1>
+      <h2 class="project-tagline">{{description}}</h2>
       <a href="https://github.com/EasyFarm/EasyFarm" class="btn">View on GitHub</a>
       <a href="https://github.com/EasyFarm/EasyFarm/zipball/master" class="btn">Download .zip</a>
       <a href="https://github.com/EasyFarm/EasyFarm/tarball/master" class="btn">Download .tar.gz</a>
